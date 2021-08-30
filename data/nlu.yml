@@ -39,6 +39,9 @@ nlu:
     - of course
     - that sounds good
     - correct
+    - thanks
+    - thank you
+    - great
 
 - intent: deny
   examples: |
@@ -50,22 +53,22 @@ nlu:
     - no way
     - not really
 
-- intent: mood_great
-  examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
+# - intent: mood_great
+#   examples: |
+#     - perfect
+#     - great
+#     - amazing
+#     - feeling like a king
+#     - wonderful
+#     - I am feeling very good
+#     - I am great
+#     - I am amazing
+#     - I am going to save the world
+#     - super stoked
+#     - extremely good
+#     - so so perfect
+#     - so good
+#     - so perfect
 
 - intent: mood_unhappy
   examples: |
@@ -90,3 +93,87 @@ nlu:
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+
+- intent: internship-faq
+  examples: |
+    - frequently asked question internship
+    - faq internship
+    - what is faq in internship
+    - FAQ internship
+
+- intent: internship_application_process
+  examples: |
+    - what is internship application process like
+    - Application Process internship
+    - apply for internship at Leapfrog
+    - trainee selection process
+    - selection process intern
+
+- intent: fun_facts
+  examples: |
+    - fun facts leapfrog
+    - leapfrog interesting facts
+    - leapfrog amusing facts 
+    - entertaining facts leapfrog
+    - exciting facts leapfrog
+
+- intent: internship_period
+  examples: |
+    - internship duration
+    - internship period
+    - internship time
+    - internship time span
+    - internship length of time
+    - internship extent
+    - How long is internship?
+    - How long is leapfrog internship?
+
+- intent: internship_paid
+  examples: |
+    - are interns paid
+    - Will I be paid for this internship?
+    - cash paid internship
+
+- intent: leapfrog_culture
+  examples: |
+    - work life balance
+    - work culture
+    - Peopleology at Leapfrog
+
+- intent: lft_blogs
+  examples: |
+    - Do you write blogs
+    - Give me the list of blogs
+    - provide blogs
+    - insights
+    - blog posts
+    - blogposts
+    - blogging
+
+- intent: ai_blogs
+  examples: |
+    - blogs on ai
+    - ai research leapfrog
+    - ai insights
+    - ai blogs
+    - blogging ai
+    - do you guys write blogs on artificial intelligence?
+
+- intent: internship_purpose
+  examples: |
+    - purpose of internship
+    - why do you conduct leapfrog internship
+    - is internship fruitful
+    - why internship
+    - goal of internship
+    - mission of internship
+    - opportunity of internship
+
+- intent: intern_experience
+  examples: |
+    - what is internship experience like in leapfrog
+    - intern stories
+    - intern experience
+    - internship experience
+    - internship stories
+

@@ -2,29 +2,61 @@ version: "2.0"
 
 stories:
 
-- story: happy path
+- story: thank you path
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_great
-  - action: utter_happy
-
-- story: sad path 1
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
   - intent: affirm
-  - action: utter_happy
+  - action: utter_gratitude
 
-- story: sad path 2
+- story: internship faq path
   steps:
   - intent: greet
   - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: deny
-  - action: utter_goodbye
+  - action: utter_ask_help
+  - intent: internship-faq
+  - action: utter_faq
+
+- story: internship application process path
+  steps:
+  - intent: internship_application_process
+  - action: utter_internship_process
+
+- story: fun facts path
+  steps:
+  - intent: fun_facts
+  - action: utter_fun_facts
+
+- story: internship period path
+  steps:
+  - intent: internship_period
+  - action: utter_internship_period
+
+- story: internship paid path
+  steps:
+  - intent: internship_paid
+  - action: utter_internship_paid
+
+- story: leapfrog culture path
+  steps:
+  - intent: leapfrog_culture
+  - action: utter_leapfrog_culture
+
+- story: leapfrog blogs path
+  steps:
+  - intent: lft_blogs
+  - action: utter_lft_blogs
+
+- story: lft ai blogs path
+  steps:
+  - intent: ai_blogs
+  - action: utter_ai_blogs
+
+- story: internship purpose path
+  steps:
+  - intent: internship_purpose
+  - action: utter_internship_purpose
+
+- story: intern experience path
+  steps:
+  - intent: intern_experience
+  - action: utter_intern_experience
+
