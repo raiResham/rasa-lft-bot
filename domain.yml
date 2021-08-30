@@ -1,0 +1,104 @@
+version: '2.0'
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- affirm:
+    use_entities: true
+- deny:
+    use_entities: true
+- mood_unhappy:
+    use_entities: true
+- bot_challenge:
+    use_entities: true
+- internship-faq:
+    use_entities: true
+- internship_application_process:
+    use_entities: true
+- fun_facts:
+    use_entities: true
+- internship_period:
+    use_entities: true
+- internship_paid:
+    use_entities: true
+- leapfrog_culture:
+    use_entities: true
+- lft_blogs:
+    use_entities: true
+- ai_blogs:
+    use_entities: true
+- internship_purpose:
+    use_entities: true
+- intern_experience:
+    use_entities: true
+- nlu_fallback:
+    use_entities: true
+entities: []
+slots: {}
+responses:
+  utter_greet:
+  - text: Hey!
+  - text: hello
+  utter_cheer_up:
+  - image: https://i.imgur.com/nGF1K8f.jpg
+    text: 'Here is something to cheer you up:'
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_sorry:
+  - text: Sorry for the inconvenience.
+  utter_info:
+  - text: |-
+      #Syntax2021 is our virtual tech conference where we brought together tech leaders all around the world who shared their awesome ideas and experiences in building great software and products.
+      It lasted from 20th - 22nd August 2021.
+  utter_ask_help:
+  - text: How may I help you?
+  utter_faq:
+  - text: |-
+      You can find more information here:
+      https://www.lftechnology.com/blog/culture/internship2020/
+  utter_internship_process:
+  - text: |-
+      Steps to apply for internship at Leapfrog:
+      STEP 1:Apply
+      STEP 2:Online Written Exam
+      STEP 3:Video Interview
+      STEP 4:Welcome
+      link:
+      https://www.lftechnology.com/internships/
+  utter_fun_facts:
+  - text: https://www.facebook.com/lftechnology/videos/413759670049930/
+  utter_internship_period:
+  - text: We have 6 Weeks Internship program.
+  utter_internship_paid:
+  - text: Yes, all interns will be rightly compensated.
+  utter_leapfrog_culture:
+  - text: https://www.lftechnology.com/blog/culture/
+  utter_lft_blogs:
+  - text: https://www.lftechnology.com/blog/
+  utter_ai_blogs:
+  - text: https://www.lftechnology.com/blog/ai/
+  utter_internship_purpose:
+  - text: Leapfrog’s 6-week internship program is designed to prepare students and recent graduates with everything to get a head start on their technological career adventure.
+  utter_intern_experience:
+  - text: https://www.lftechnology.com/blog/culture/leapfrog-internship/
+  utter_gratitude:
+  - text: great!
+  - text: you're welcome!
+  utter_please_rephrase:
+  - text: I'm sorry, I didn't quite understand that.
+actions:
+- action_match_news
+forms: {}
+e2e_actions: []
